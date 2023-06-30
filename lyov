@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Website</title>
+    <title>Cuisine Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Custom styles for the webpage */
@@ -12,27 +12,18 @@
         }
 
         .jumbotron {
-            background-image: url('path/to/background-image.jpg');
-            background-size: cover;
+            background-color: #343a40;
             color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
-
-        .running-text {
-            color: #333;
-            font-size: 20px;
-            font-weight: bold;
-            animation: runningText 5s linear infinite;
-        }
-
-        @keyframes runningText {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
         }
 
         .card {
             background-color: #fff;
             border: none;
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
         }
 
         .card-title {
@@ -42,37 +33,38 @@
 </head>
 <body>
     <div class="jumbotron text-center">
-        <h1 class="display-4">Beautiful Website</h1>
-        <p class="lead">A stunning website with images and running text</p>
+        <h1 class="display-4">Cuisine Website</h1>
+        <p class="lead">Explore delicious cuisines from around the world</p>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card">
-                    <img src="path/to/image1.jpg" class="card-img-top" alt="Image 1">
+                    <img src="https://www.gstatic.com/webp/gallery/1.jpg" class="card-img-top" alt="Cuisine 1">
                     <div class="card-body">
-                        <h5 class="card-title">Image 1</h5>
-                        <p class="card-text">This is a beautiful image.</p>
+                        <h5 class="card-title">Cuisine 1</h5>
+                        <p class="card-text">This is a description of cuisine 1.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card">
-                    <img src="path/to/image2.jpg" class="card-img-top" alt="Image 2">
+                    <img src="https://www.gstatic.com/webp/gallery/2.jpg" class="card-img-top" alt="Cuisine 2">
                     <div class="card-body">
-                        <h5 class="card-title">Image 2</h5>
-                        <p class="card-text">This is another stunning image.</p>
+                        <h5 class="card-title">Cuisine 2</h5>
+                        <p class="card-text">This is a description of cuisine 2.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="running-text">GIDEEES MENAK DUES QEZNIC EN YAN DEVOPS CHKA????.</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.gstatic.com/webp/gallery/3.jpg" class="card-img-top" alt="Cuisine 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuisine 3</h5>
+                        <p class="card-text">This is a description of cuisine 3.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
