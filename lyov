@@ -3,37 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Website</title>
+    <title>Colorful Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for the webpage */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-primary:hover {
+            background-color: #138496;
+            border-color: #138496;
+        }
+
+        .card {
+            background-color: #fff;
+            border: none;
+        }
+
+        .card-header {
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            color: #17a2b8;
+        }
+
+        .card-body {
+            color: #6c757d;
+        }
+    </style>
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Your Website</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Colorful Website</h1>
+        <p class="lead">A beautiful and colorful webpage using Bootstrap</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+    </div>
 
-    <div class="container mt-4">
-        <h1>Welcome to Your Website</h1>
-        <p>This is a basic Bootstrap template for your website.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Card 1</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a colorful card with some content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Card 2</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is another colorful card with some content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Card 3</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Yet another colorful card with some content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
