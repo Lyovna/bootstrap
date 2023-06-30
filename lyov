@@ -29,16 +29,6 @@
         .card-title {
             color: #17a2b8;
         }
-
-        .jumping-words {
-            animation: jump 2s infinite;
-        }
-
-        @keyframes jump {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0); }
-        }
     </style>
 </head>
 <body>
@@ -79,13 +69,8 @@
         </div>
     </div>
 
-    <h2 class="text-center mt-5">Jumping Words</h2>
-    <div class="text-center mt-3">
-        <span class="jumping-words">Delicious</span>
-        <span class="jumping-words">Tasty</span>
-        <span class="jumping-words">Flavorful</span>
-        <span class="jumping-words">Savory</span>
-        <span class="jumping-words">Mouthwatering</span>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
