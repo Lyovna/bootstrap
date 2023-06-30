@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colorful Website</title>
+    <title>Beautiful Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Custom styles for the webpage */
@@ -12,18 +12,22 @@
         }
 
         .jumbotron {
-            background-color: #343a40;
+            background-image: url('path/to/background-image.jpg');
+            background-size: cover;
             color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
-        .btn-primary {
-            background-color: #17a2b8;
-            border-color: #17a2b8;
+        .running-text {
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            animation: runningText 5s linear infinite;
         }
 
-        .btn-primary:hover {
-            background-color: #138496;
-            border-color: #138496;
+        @keyframes runningText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
         }
 
         .card {
@@ -31,57 +35,44 @@
             border: none;
         }
 
-        .card-header {
-            background-color: #f8f9fa;
-        }
-
         .card-title {
             color: #17a2b8;
-        }
-
-        .card-body {
-            color: #6c757d;
         }
     </style>
 </head>
 <body>
     <div class="jumbotron text-center">
-        <h1 class="display-4">Colorful Website</h1>
-        <p class="lead">A beautiful and colorful webpage using Bootstrap</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+        <h1 class="display-4">Beautiful Website</h1>
+        <p class="lead">A stunning website with images and running text</p>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title">Card 1</h5>
-                    </div>
+                    <img src="path/to/image1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <p>This is a colorful card with some content.</p>
+                        <h5 class="card-title">Image 1</h5>
+                        <p class="card-text">This is a beautiful image.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title">Card 2</h5>
-                    </div>
+                    <img src="path/to/image2.jpg" class="card-img-top" alt="Image 2">
                     <div class="card-body">
-                        <p>This is another colorful card with some content.</p>
+                        <h5 class="card-title">Image 2</h5>
+                        <p class="card-text">This is another stunning image.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title">Card 3</h5>
-                    </div>
-                    <div class="card-body">
-                        <p>Yet another colorful card with some content.</p>
-                    </div>
-                </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="running-text">This is a running text that adds dynamic movement to the website.</p>
             </div>
         </div>
     </div>
