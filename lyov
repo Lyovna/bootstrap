@@ -12,6 +12,7 @@
       background-color: #f8f9fa;
     }
 
+
     .jumbotron {
       background-color: #343a40;
       color: #fff;
